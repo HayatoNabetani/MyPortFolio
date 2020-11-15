@@ -203,11 +203,18 @@ $(function() {
       });
   });
 });
-  jQuery(window).on('load',function(){
+//   jQuery(window).on('load',function(){
 
 
-          $('.preloader').fadeOut(200);
+//           $('.preloader').fadeOut(200);
 
       
-  });
+//   });
+//オープニングアニメーション
+setTimeout(function(){
+    $('.start p').fadeIn(1600);
+  },500); //0.5秒後にロゴをフェードイン!
+  setTimeout(function(){
+    $('.start').fadeOut(500);
+  },3500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
 
